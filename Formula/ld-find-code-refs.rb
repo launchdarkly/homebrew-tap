@@ -5,7 +5,7 @@ class LdFindCodeRefs < Formula
   homepage "https://launchdarkly.com/"
   url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/0.2.1/ld-find-code-refs_0.2.1_darwin_amd64.tar.gz"
   sha256 "1ca25a33488b8c62f9ad8c1a88f8e647e0a7cba14aad7bcd3483e807d2d267fd"
-  version "0.2.0"
+  version "0.2.1"
 
   depends_on "ag"
 

@@ -4,7 +4,7 @@ class LdFindCodeRefs < Formula
   desc "Enables you to keep track of feature flag usage in your code from LaunchDarkly."
   homepage "https://launchdarkly.com/"
   url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/0.4.0/ld-find-code-refs_0.4.0_darwin_amd64.tar.gz"
-  sha256 "599f81e9730e8425f8266c8bee2614e56d1340e25e5d233612c3f7247325457f"
+  sha256 "0d482581f9f40f6e94a4ce0a43b3c5a46050587af88c834671c35aca653d58c1"
   version "0.4.0"
 
   depends_on "ag"

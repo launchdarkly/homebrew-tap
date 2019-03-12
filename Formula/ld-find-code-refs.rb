@@ -2,9 +2,9 @@
 class LdFindCodeRefs < Formula
   desc "Job for finding and sending feature flag code references to LaunchDarkly"
   homepage "https://launchdarkly.com"
-  url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.0.0/ld-find-code-refs_1.0.0_darwin_amd64.tar.gz"
-  version "1.0.0"
-  sha256 "55fabb156c30d32120db626396dd2fc1f055ae0da461248185b67847d6791e84"
+  url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.0.1/ld-find-code-refs_1.0.1_darwin_amd64.tar.gz"
+  version "1.0.1"
+  sha256 "e970a13c861e058ee82f25d523d7d71e3fb99f68b273076b7d7470c9a88cfa6e"
   
   depends_on "ag"
 

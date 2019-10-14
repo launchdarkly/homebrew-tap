@@ -1,4 +1,6 @@
-LaunchDarkly's homebrew tap.
+# LaunchDarkly Homebrew tap
+
+This tap provides the ability to install LaunchDarkly tools with [Homebrew](https://brew.sh/).
 
 ## Installation
 

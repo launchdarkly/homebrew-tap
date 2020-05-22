@@ -2,16 +2,16 @@
 class LdFindCodeRefs < Formula
   desc "Job for finding and sending feature flag code references to LaunchDarkly"
   homepage "https://launchdarkly.com"
-  version "1.5.0"
+  version "1.5.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.5.0/ld-find-code-refs_1.5.0_darwin_amd64.tar.gz"
-    sha256 "49c3a6eb0baa083b55ffdd99c3b1ee20ec158cf8668607f65aadf6de7c0530b3"
+    url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.5.1/ld-find-code-refs_1.5.1_darwin_amd64.tar.gz"
+    sha256 "18fbd1ba3a3b3a41a0407dfae199fdc9e60ea963a11fbf2091ad07f32de00aae"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.5.0/ld-find-code-refs_1.5.0_linux_amd64.tar.gz"
-      sha256 "fad6012debb91cc696a589f1a0a062ad82b425682aff6a90ca79e2e2a39e7696"
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/1.5.1/ld-find-code-refs_1.5.1_linux_amd64.tar.gz"
+      sha256 "56b7a1bf65e481c891e90e7b1f6df4a4ff4388a784bc1b8afe069dfb63f722a6"
     end
   end
   

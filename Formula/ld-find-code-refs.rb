@@ -3,7 +3,6 @@ class LdFindCodeRefs < Formula
   desc "Job for finding and sending feature flag code references to LaunchDarkly"
   homepage "https://launchdarkly.com"
   version "2.2.3"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/2.2.3/ld-find-code-refs_2.2.3_darwin_amd64.tar.gz"

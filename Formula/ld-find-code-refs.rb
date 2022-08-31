@@ -5,20 +5,20 @@
 class LdFindCodeRefs < Formula
   desc "Job for finding and sending feature flag code references to LaunchDarkly"
   homepage "https://launchdarkly.com"
-  version "2.5.7"
+  version "2.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.5.7/ld-find-code-refs_2.5.7_darwin_arm64.tar.gz"
-      sha256 "445463df76d95d736f88072a1ba9a2c3c9131b1d05dd1f25dfe0a4311a1db833"
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.6.0/ld-find-code-refs_2.6.0_darwin_arm64.tar.gz"
+      sha256 "8c461fc6e4f21a0a1111004fda4551473546804eca47abdd3266f5c49f773ea6"
 
       def install
         bin.install "ld-find-code-refs"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.5.7/ld-find-code-refs_2.5.7_darwin_amd64.tar.gz"
-      sha256 "0f1e0cd813247e00c58325a52d5a6723c24f5978e47b138a475341a19a4968fe"
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.6.0/ld-find-code-refs_2.6.0_darwin_amd64.tar.gz"
+      sha256 "5c7f8faafbaa060c0d17582fce3b6692042d29e0ffa8fc1ce339cb7004479340"
 
       def install
         bin.install "ld-find-code-refs"
@@ -27,17 +27,17 @@ class LdFindCodeRefs < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.5.7/ld-find-code-refs_2.5.7_linux_amd64.tar.gz"
-      sha256 "ca49d380f9647264ca4ccca41861668effd69d9dd559420c3d1608a21c77d13f"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.6.0/ld-find-code-refs_2.6.0_linux_arm64.tar.gz"
+      sha256 "0da29fc411aa14c53cbcf67bda24708593ee8a52ebdf10e01d12a3cd18fe8510"
 
       def install
         bin.install "ld-find-code-refs"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.5.7/ld-find-code-refs_2.5.7_linux_arm64.tar.gz"
-      sha256 "ca14668343fcdd444ed5d3645ffbf20e2717d3d8580590d21374dfda82700f6e"
+    if Hardware::CPU.intel?
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.6.0/ld-find-code-refs_2.6.0_linux_amd64.tar.gz"
+      sha256 "7765c9abc1210f5db0ae00cd3dda43bc314afb1dd70dbb3362dbf07eb1c8ae14"
 
       def install
         bin.install "ld-find-code-refs"

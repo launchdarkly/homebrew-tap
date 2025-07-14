@@ -5,20 +5,20 @@
 class Ldcli < Formula
   desc "The official command line interface for managing LaunchDarkly feature flags."
   homepage "https://launchdarkly.com"
-  version "1.15.5"
+  version "1.16.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/launchdarkly/ldcli/releases/download/v1.15.5/ldcli_1.15.5_darwin_amd64.tar.gz"
-      sha256 "1160832043d97375620228d9923ae8be3ac21054c0be0b36caaf370a0aea13ac"
+      url "https://github.com/launchdarkly/ldcli/releases/download/v1.16.0/ldcli_1.16.0_darwin_amd64.tar.gz"
+      sha256 "a4245a93bca78efbbe8b8506ba07cecbc3e78d28650ad95c20433b097b089fa8"
 
       def install
         bin.install "ldcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/launchdarkly/ldcli/releases/download/v1.15.5/ldcli_1.15.5_darwin_arm64.tar.gz"
-      sha256 "8de966bd94b7a3832739cc22680def94c92272a87ad9ba1dcd4d37fbc913b137"
+      url "https://github.com/launchdarkly/ldcli/releases/download/v1.16.0/ldcli_1.16.0_darwin_arm64.tar.gz"
+      sha256 "e0236a4ecb72603d5f54c8b22616db3fc55078e0874dd8309168621d520c5d71"
 
       def install
         bin.install "ldcli"
@@ -28,15 +28,15 @@ class Ldcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/launchdarkly/ldcli/releases/download/v1.15.5/ldcli_1.15.5_linux_amd64.tar.gz"
-      sha256 "0baca9597759b6433762d45164f0c66abe53b7adf23781fc3dc97ae4e545ca60"
+      url "https://github.com/launchdarkly/ldcli/releases/download/v1.16.0/ldcli_1.16.0_linux_amd64.tar.gz"
+      sha256 "53f2ed8f2a0a01477c987de2440dd6da04b5bb2488fc6a5c6487847fd2e34aa3"
       def install
         bin.install "ldcli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/launchdarkly/ldcli/releases/download/v1.15.5/ldcli_1.15.5_linux_arm64.tar.gz"
-      sha256 "2534237c48a821306fcff5c68aa16b558e9747f1b21cbd627060387f9e81344a"
+      url "https://github.com/launchdarkly/ldcli/releases/download/v1.16.0/ldcli_1.16.0_linux_arm64.tar.gz"
+      sha256 "ff683c298272091268ecfc6daaa34844d606a95b7b6043621a73d9248193edf4"
       def install
         bin.install "ldcli"
       end

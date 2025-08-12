@@ -8,17 +8,17 @@ class LdFindCodeRefs < Formula
   version "2.14.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_darwin_amd64.tar.gz"
-      sha256 "c450818d9c3ce56032c4008d75daea6b4f7b336b6ffcc798a15b1f359e49e5a9"
+    if Hardware::CPU.arm?
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_darwin_arm64.tar.gz"
+      sha256 "f150e9e2b158d2d7979af8cb1e540bbec00473d8b1ab142dbdddc32eb066b662"
 
       def install
         bin.install "ld-find-code-refs"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_darwin_arm64.tar.gz"
-      sha256 "1d4fe57f8ee4bfa006c31a6248425360907b3bd77b4d42ab6812f3e85be692ea"
+    if Hardware::CPU.intel?
+      url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_darwin_amd64.tar.gz"
+      sha256 "d5de84a54160062e0f39cabbd6624fbc2529ba2c55d0ad26345264cabb6549a4"
 
       def install
         bin.install "ld-find-code-refs"
@@ -29,7 +29,7 @@ class LdFindCodeRefs < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_linux_arm64.tar.gz"
-      sha256 "3d52b3eb4ce558ff9f4c1cb5ffef6ddec20e87886d7cf3e04c0ab1b6b476a2fc"
+      sha256 "6f3d3685a210dba455f8d9f2e92a5a7f5d552b05ae7388dde181729de39fad31"
 
       def install
         bin.install "ld-find-code-refs"
@@ -37,7 +37,7 @@ class LdFindCodeRefs < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.14.0/ld-find-code-refs_2.14.0_linux_amd64.tar.gz"
-      sha256 "1e2d8b059236fed5f257fe96d29c2b0c39d157185cee85b447ced13713532475"
+      sha256 "eb0cae08d10d4ade40d12833dc7ab5736473cabf5f8e3d37535e438b666afece"
 
       def install
         bin.install "ld-find-code-refs"

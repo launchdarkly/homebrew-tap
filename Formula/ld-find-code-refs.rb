@@ -10,7 +10,7 @@ class LdFindCodeRefs < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.16.0/ld-find-code-refs_2.16.0_darwin_arm64.tar.gz"
-      sha256 "b41fddfaa12d4c512674670d003f50912aeb71ce05a07587441caa2f2219d9e0"
+      sha256 "5f5358effcb360c8662be6d0eda90c0f5557d2f387d17bbbac07a61224d169b6"
 
       def install
         bin.install "ld-find-code-refs"
@@ -18,7 +18,7 @@ class LdFindCodeRefs < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.16.0/ld-find-code-refs_2.16.0_darwin_amd64.tar.gz"
-      sha256 "c93b76814db75db9240a925d87472678ea39fcef5c2108f15c46536bff8ef20d"
+      sha256 "cecafe4ef1319f6599f32e50bc9449b97bd59a28055a2908be664f4d585a40d3"
 
       def install
         bin.install "ld-find-code-refs"
@@ -29,7 +29,7 @@ class LdFindCodeRefs < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.16.0/ld-find-code-refs_2.16.0_linux_amd64.tar.gz"
-      sha256 "7d37f98d02b5cfb3a4fad72ee0c6a082a9d27e6ca8c8e88c9f9ec75cbe5ee5e8"
+      sha256 "2f6ed5fd9447fbc39e7fa55d3567e0d289545bcd02312108ab6108a1dc1aec90"
 
       def install
         bin.install "ld-find-code-refs"
@@ -37,7 +37,7 @@ class LdFindCodeRefs < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/launchdarkly/ld-find-code-refs/releases/download/v2.16.0/ld-find-code-refs_2.16.0_linux_arm64.tar.gz"
-      sha256 "fcda226c1bdcddcdcac84f5bd2c2c2946d792d4331cff593be0fdd339e69ffdc"
+      sha256 "d2c18454f0a59413d03a3e8b68c02224b6673f8c3c34bbbc05b529c9746ce959"
 
       def install
         bin.install "ld-find-code-refs"
